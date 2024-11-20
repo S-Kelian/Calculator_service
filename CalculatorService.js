@@ -2,7 +2,7 @@ var http = require ('http');
 var request = require('sync-request');
 
 const PORT = 80;
-const service_ip = '192.168.37.27';
+const service_ip = '20.5.5.238';
 
 const SUM_SERVICE_IP_PORT = 'http://'+service_ip+':31001';
 const SUB_SERVICE_IP_PORT = 'http://'+service_ip+':31002';
@@ -23,6 +23,7 @@ Array.prototype.clean = function() {
     return this;
 }		
 function infixToPostfix(exp) {
+	console.log("TEST ----------------------------------");
 	var outputQueue = [];
 	var operatorStack = [];
 	var operators = {"/": { precedence: 3, associativity: "Left" },
