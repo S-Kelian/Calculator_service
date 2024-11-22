@@ -123,7 +123,7 @@ http.createServer (function(req, resp) {
 				console.log("New request : ");
 				console.log(body + " = " + res);
 				console.log("\r\n");
-				resp.write("result = " + res);
+				resp.write("result is equal to " + res);
 				resp.write("\r\n");
 			}
 			resp.end();
